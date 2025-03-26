@@ -10,7 +10,7 @@ public class WebTableTest {
 	  
 	  WebDriver driver = new ChromeDriver();
 	  driver.get("https://testautomationpractice.blogspot.com/");
-	  List<webelements> 
+	  List<webelements> items = driver.findelements();
 	  
   }
 }
