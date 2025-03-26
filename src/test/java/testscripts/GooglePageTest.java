@@ -23,7 +23,7 @@ public class GooglePageTest {
 //	  WebDriver driver = new EdgeDriver();
 	  
 	  driver.manage().window().maximize();
-	  driver.manage().deleteAllCookies();
+//	  driver.manage().deleteAllCookies();
 //	  	  
 //	  driver.get("https://www.google.com/");
 //	  WebElement searchBox = driver.findElement(By.id("APjFqb"));
@@ -34,27 +34,27 @@ public class GooglePageTest {
 //	  WebElement name = driver.findElement(By.xpath("//form[@class='form reg-custom']/p[@id='email']"));
 //	  
 	  
-	  driver.navigate().to("https://www.lambdatest.com/blog/");
-//	  WebElement name = driver.findElement(By.xpath("//div[@class='header__menu__items']/a"));
+//	  driver.navigate().to("https://www.lambdatest.com/blog/");
+////	  WebElement name = driver.findElement(By.xpath("//div[@class='header__menu__items']/a"));
+////	  WebElement name = driver.findElement(By.xpath("(//div[@class='dropdown rs-dropdown dropdown_blog item_link'])[4]"));
 //	  WebElement name = driver.findElement(By.xpath("(//div[@class='dropdown rs-dropdown dropdown_blog item_link'])[4]"));
-	  WebElement name = driver.findElement(By.xpath("(//div[@class='dropdown rs-dropdown dropdown_blog item_link'])[4]"));
-	  name.click();
+//	  name.click();
 
 //	  
-//	  driver.get("https://the-internet.herokuapp.com/login");
-////	  driver.navigate().to("https://the-internet.herokuapp.com/login");
-////	  WebElement name = driver.findElement(By.id("username"));
+	  driver.get("https://the-internet.herokuapp.com/login");
+//	  driver.navigate().to("https://the-internet.herokuapp.com/login");
+	  WebElement name = driver.findElement(By.id("username"));
 //	  WebElement name = driver.findElement(By.xpath("//input[@type='text' and id='username']"));
-//	  name.sendKeys("tomsmith");
-//	  WebElement pwd = driver.findElement(By.name("password"));
-//	  pwd.sendKeys("SuperSecretPassword!");
-////	  WebElement loginbutn = driver.findElement(By.className("radius"));
-////	  WebElement loginbutn = driver.findElement(By.tagName("button"));
+	  name.sendKeys("tomsmith");
+	  WebElement pwd = driver.findElement(By.name("password"));
+	  pwd.sendKeys("SuperSecretPassword!");
+	  WebElement loginbutn = driver.findElement(By.className("radius"));
+//	  WebElement loginbutn = driver.findElement(By.tagName("button"));
 //	  WebElement loginbutn = driver.findElement(By.xpath("//i[@class='fa fa-2x fa-sign-in']"));
-//	  loginbutn.click();
-//	  
-//	  WebElement logoutbutn = driver.findElement(By.xpath("//i[@class='icon-2x icon-signout']"));
-//	  logoutbutn.click();
+	  loginbutn.click();
+	  
+	  WebElement logoutbutton = driver.findElement(By.xpath("//i[@class='icon-2x icon-signout']"));
+	  logoutbutton.click();
 //	  
 //	  driver.navigate().back();
 //	  System.out.println(driver.getTitle());
