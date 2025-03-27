@@ -17,16 +17,14 @@ public class WebTableTest {
 	  driver.get("https://testautomationpractice.blogspot.com/");
 	  List<WebElement> items = driver.findElements(
 			  By.xpath("//td[contains(text(), 'Master')]//following-sibling::td"));
-//	  System.out.println("Details......"+items.size());
-//	  for(WebElement item:items) {
-//		  System.out.println(item.getText());
-//	  }
-	  
-	  String authorName = driver.findElement(
-			  By.xpath("//td[contains(text(), '3000')]//preceding-sibling::td[3]")).getText();
 	  System.out.println("Details......"+items.size());
 	  for(WebElement item:items) {
 		  System.out.println(item.getText());
 	  }
+	  
+	  String authorName = driver.findElement(
+			  By.xpath("//td[contains(text(), '3000')]//preceding-sibling::td[2]")).getText();
+	  System.out.println("Details......"+items.size());
+	  
   }
 }
