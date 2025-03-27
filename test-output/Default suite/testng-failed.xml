@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testscripts.GooglePageTest">
+      <class name="testscripts.WebTableTest">
         <methods>
-          <include name="seleniumsearch"/>
+          <include name="dynamicWebTable"/>
         </methods>
-      </class> <!-- testscripts.GooglePageTest -->
+      </class> <!-- testscripts.WebTableTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
