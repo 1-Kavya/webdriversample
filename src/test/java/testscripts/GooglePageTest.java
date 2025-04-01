@@ -1,6 +1,8 @@
 package testscripts;
 
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -20,8 +22,11 @@ public class GooglePageTest {
 	  WebDriver driver = new ChromeDriver();
 //	  WebDriver driver = new EdgeDriver();
 	  
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); //used using findelement or findelements method
+	  
 	  driver.manage().window().maximize();
 //	  driver.manage().deleteAllCookies();
+	  
 //	  
 	  driver.get("https://the-internet.herokuapp.com/login");
 //	  driver.navigate().to("https://the-internet.herokuapp.com/login");
@@ -41,6 +46,12 @@ public class GooglePageTest {
 	  
 //	  loginbutn.click();
 //	  loginbutn.submit();
+	  
+	  //to wait and get he text of success using implict wait it is inbuilt of 15 Seconds, in this wait if element is found then proceed.
+	  //we give the implict wait at the driver level 
+	  String strmsg = driver.findElement(By.cssSelector("div.flash success")).getText();
+	  System.out.println(strmsg);
+	  
 	  
 //	  WebElement logoutbutton = driver.findElement(By.xpath("//i[@class='icon-2x icon-signout']"));
 //	  logoutbutton.click();
