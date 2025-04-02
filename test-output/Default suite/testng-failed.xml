@@ -6,9 +6,8 @@
       <class name="testscripts.BookSearchTest">
         <methods>
           <include name="teardown"/>
+          <include name="crimeNovelSearch"/>
           <include name="setup"/>
-          <include name="novelSearch"/>
-          <include name="bookSearch"/>
         </methods>
       </class> <!-- testscripts.BookSearchTest -->
     </classes>
